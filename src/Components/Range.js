@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { css } from 'aphrodite'
+import styles from './RengeStyles';
 
 const Range = (props) => {
 
@@ -20,7 +22,7 @@ console.log(value)
 
     return (
       <div className="range">
-      	<input 
+      	<input className={css(styles.input)}
 	      	type="range"
 	      	value={value}
 	      	min={props.min}
